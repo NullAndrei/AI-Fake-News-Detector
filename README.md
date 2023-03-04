@@ -5,7 +5,7 @@ Basic AI Fake News Detector written in python
 ### Example:
 ![GIF example](https://gifyu.com/images/ezgif.com-video-to-gif25c19cf7475c2212.gif)
 
-### About app:
+### About:
 > This is a simple python script that detect Fake or Real news by using [TensorFlow](https://www.tensorflow.org/).<br>
 This script use fake news [Dataset](https://en.wikipedia.org/wiki/Data_set) which contains News text and corresponding label (FAKE or REAL),<br>
 also for the [Word Embedding](https://en.wikipedia.org/wiki/Word_embedding) i used the file called glove.6B.50d.txt
@@ -18,4 +18,4 @@ also for the [Word Embedding](https://en.wikipedia.org/wiki/Word_embedding) i us
 
 > This is one of my first AI projects. I will try to update and work on this script, thanks to everyone who gave a star to this project.
 
-By **NullAndrei** <3
+By **NullAndrei**
