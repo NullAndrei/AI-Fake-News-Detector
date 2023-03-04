@@ -11,8 +11,8 @@ This script use fake news [Dataset](https://en.wikipedia.org/wiki/Data_set) whic
 also for the [Word Embedding](https://en.wikipedia.org/wiki/Word_embedding) i used the file called glove.6B.50d.txt
 
 ## Getting Started
-1. ```git clone https://github.com/NullAndrei/AI_FakeNewsDetector.git```
-2. ```cd AI_FakeNewsDetector```
+1. ```git clone https://github.com/NullAndrei/AI-Fake-News-Detector.git```
+2. ```cd AI-Fake-News-Detector```
 3. ```pip install -r requirements.txt```
 4. ```python main.py```
 
