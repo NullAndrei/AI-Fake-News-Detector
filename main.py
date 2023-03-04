@@ -47,7 +47,7 @@ from sklearn import preprocessing
 tf.disable_eager_execution()
  
 # Reading the data
-data = pd.read_csv("data/news.csv")
+data = pd.read_csv("news.csv")
 data.head()
 
 data = data.drop(["Unnamed: 0"], axis=1)
@@ -88,7 +88,7 @@ test_labels = labels[0:split]
 training_labels = labels[split:training_size]
 
 embeddings_index = {}
-with open('data/glove.6B.50d.txt') as f:
+with open('glove.6B.50d.txt') as f:
 	for line in f:
 		values = line.split()
 		word = values[0]
