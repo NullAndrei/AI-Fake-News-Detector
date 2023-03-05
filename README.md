@@ -11,7 +11,7 @@ This is a simple Fake News Detector written in python
 ### How does the script work?:
 > This script use fake news dataset, which contains News text and corresponding label fake or real.
 
-Libraries:
+**Libraries:**
 - [NumPy](https://numpy.org/): To perform different mathematical functions.
 - [Pandas](https://pandas.pydata.org/): To load dataset.
 - [Tensorflow](https://www.tensorflow.org/): To preprocessing the data and to create the model.
