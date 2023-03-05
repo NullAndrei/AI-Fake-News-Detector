@@ -15,6 +15,11 @@ This is a simple Fake News Detector written in python
 - [x] Generating Word Embeddings
 - [x] Model Architecture
 - [x] Model Evaluation and Prediction
+Libraries that script use:
+- [NumPy](https://numpy.org/): To perform different mathematical functions.
+- [Pandas](https://pandas.pydata.org/): To load dataset.
+- [Tensorflow](https://www.tensorflow.org/): To preprocessing the data and to create the model.
+- [SkLearn](https://scikit-learn.org/stable/): For train-test split and to import the modules for model evaluation.
 
 ## Getting Started
 1. ```git clone https://github.com/NullAndrei/AI-Fake-News-Detector.git```
