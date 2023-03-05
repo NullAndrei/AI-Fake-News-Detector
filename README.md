@@ -165,5 +165,5 @@ python main.py
 ```
 - Input the sample text to check if fake or not.
 
-###For the end.
+### For the end.
 > Thanks to everyone who took the time to read this repo. If you like it, throw a star. Everyone has the right to improve this script and make it even better. Follow my Github profile for more projects like this.
