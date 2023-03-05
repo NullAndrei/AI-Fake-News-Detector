@@ -10,6 +10,11 @@ This is a simple Fake News Detector written in python
 
 ### How does the script work?:
 > This script use fake news dataset, which contains News text and corresponding label fake or real.
+[*] Importing Libraries and dataset
+[*] Preprocessing Dataset
+[*] Generating Word Embeddings
+[*] Model Architecture
+[*] Model Evaluation and Prediction
 
 ## Getting Started
 1. ```git clone https://github.com/NullAndrei/AI-Fake-News-Detector.git```
