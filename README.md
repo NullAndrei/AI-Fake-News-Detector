@@ -9,7 +9,7 @@ This is a simple Fake News Detector written in python
 > Fake news is false or misleading information presented as news. Fake news often has the aim of damaging the reputation of a person or entity, or making money through advertising revenue. Although false news has always been spread throughout history, the term "fake news" was first used in the 1890s when sensational reports in newspapers were common.
 
 ### How does the script work?:
-> This script use fake news dataset, which contains News text and corresponding label fake or real.
+> This script is developed an deep learning model using [Tensorflow](https://www.tensorflow.org/) and use this model to detect whether the news is fake or not. This script use fake_news_dataset, which contains News text and corresponding label fake or real.
 
 **Libraries:**
 - [NumPy](https://numpy.org/): To perform different mathematical functions.
