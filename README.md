@@ -3,11 +3,11 @@
 # AI Fake News Detector
 This is a simple Fake News Detector written in python
 
-[How does the script work?](#How-does-the-script-work?)
+[How does the script work?](#How-does-the-script-work)
 
-[How the script is build?](#How-the-script-is-build?)
+[How the script is build?](#How-the-script-is-build)
 
-[How to use the script?](#How-to-use-the-script?)
+[How to use the script?](#How-to-use-the-script)
 
 [For the end](#For-the-end)
 
@@ -16,7 +16,7 @@ This is a simple Fake News Detector written in python
 ***What is [fake news](https://en.wikipedia.org/wiki/Fake_news)?***
 > Fake news is false or misleading information presented as news. Fake news often has the aim of damaging the reputation of a person or entity, or making money through advertising revenue. Although false news has always been spread throughout history, the term "fake news" was first used in the 1890s when sensational reports in newspapers were common.
 
-# How does the script work?
+# How does the script work
 > This script is developed an deep learning model using [Tensorflow](https://www.tensorflow.org/) and use this model to detect whether the news is fake or not. This script also use fake_news_dataset, which contains News text and corresponding label fake or real.
 
 **Libraries:**
@@ -31,7 +31,7 @@ This is a simple Fake News Detector written in python
 - [x] Model Architecture
 - [x] Model Evaluation and Prediction
 
-# How the script is build?
+# How the script is build
 ```python
 # Reading the data
 data = pd.read_csv("news.csv")
@@ -154,7 +154,7 @@ else:
 ```
 - Now, the detection model is built using TensorFlow. Now I will try to test the model by using some news text by predicting whether it is true or false.
 
-# How to use the script?
+# How to use the script
 - Clone the repo
 ```
 git clone https://github.com/NullAndrei/AI-Fake-News-Detector.git
