@@ -151,8 +151,8 @@ else:
 ```
 git clone https://github.com/NullAndrei/AI-Fake-News-Detector.git
 ```
-- Download the **data.zip** from the link below
-[data.zip](https://drive.proton.me/urls/PHA9NTS41W#YfBsBk2q6GDh)
+- Download the **data.zip** from the link: [data.zip](https://drive.proton.me/urls/PHA9NTS41W#YfBsBk2q6GDh)
+
 The password is: **gVwMLTu39**
 - Unzip the **data.zip** in the **AI-Fake-News-Detector/** directory
 - Now install the requirements
