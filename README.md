@@ -3,10 +3,10 @@
 # AI Fake News Detector
 This is a simple Fake News Detector written in python
 
-[How does the script work?](### How does the script work?)
-[How the script is build?](### How the script is build?)
-[How to use the script?](### How to use the script?)
-[For the end](### For the end)
+[How does the script work?](###How does the script work?)
+[How the script is build?](###How the script is build?)
+[How to use the script?](###How to use the script?)
+[For the end](###For the end)
 
 ![https://i.ibb.co/f8yMm5m/2023-03-04-20-48.png](https://i.ibb.co/f8yMm5m/2023-03-04-20-48.png)
 
