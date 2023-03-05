@@ -145,3 +145,22 @@ else:
 	print(f"Checked news: {X}\n>>> Result: This news are FAKE!")
 ```
 - Now, the detection model is built using TensorFlow. Now I will try to test the model by using some news text by predicting whether it is true or false.
+
+### How to use the script?
+- Clone the repo
+```
+git clone https://github.com/NullAndrei/AI-Fake-News-Detector.git
+```
+- Download the **data.zip** from the link below
+[data.zip](https://drive.proton.me/urls/PHA9NTS41W#YfBsBk2q6GDh)
+The password is: **gVwMLTu39**
+- Unzip the **data.zip** in the **AI-Fake-News-Detector/** directory
+- Now install the requirements
+```
+pip install -r requirements.txt
+```
+- Now you are ready to run the script
+```
+python main.py
+```
+- Input the sample text to check if fake or not.
