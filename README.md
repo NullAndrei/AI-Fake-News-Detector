@@ -79,3 +79,69 @@ test_sequences1 = padded1[0:split]
 test_labels = labels[0:split]
 training_labels = labels[split:training_size]
 ```
+**Generating Word Embedding**
+```python
+embeddings_index = {}
+with open('glove.6B.50d.txt') as f:
+	for line in f:
+		values = line.split()
+		word = values[0]
+		coefs = np.asarray(values[1:], dtype='float32')
+		embeddings_index[word] = coefs
+
+# Generating embeddings
+embeddings_matrix = np.zeros((vocab_size1+1, embedding_dim))
+for word, i in word_index1.items():
+	embedding_vector = embeddings_index.get(word)
+	if embedding_vector is not None:
+		embeddings_matrix[i] = embedding_vector
+```
+- It allows words with similar meanings to have a similar representation. Here each individual word is represented as real-valued vectors in a predefined vector space. For that I will use glove.6B.50d.txt. It has the predefined vector space for words.
+**Creating Model Architecture**
+```python
+model = tf.keras.Sequential([
+	tf.keras.layers.Embedding(vocab_size1+1, embedding_dim,
+							input_length=max_length, weights=[
+								embeddings_matrix],
+							trainable=False),
+	tf.keras.layers.Dropout(0.2),
+	tf.keras.layers.Conv1D(64, 5, activation='relu'),
+	tf.keras.layers.MaxPooling1D(pool_size=4),
+	tf.keras.layers.LSTM(64),
+	tf.keras.layers.Dense(1, activation='sigmoid')
+])
+model.compile(loss='binary_crossentropy',
+			optimizer='adam', metrics=['accuracy'])
+model.summary()
+```
+- Now it’s time to introduce TensorFlow to create the model. Here I use the TensorFlow embedding technique with Keras Embedding Layer where I map original input data into some set of real-valued dimensions.
+```python
+num_epochs = 50
+
+training_padded = np.array(training_sequences1)
+training_labels = np.array(training_labels)
+testing_padded = np.array(test_sequences1)
+testing_labels = np.array(test_labels)
+
+history = model.fit(training_padded, training_labels,
+					epochs=num_epochs,
+					validation_data=(testing_padded,
+									testing_labels),
+					verbose=2)
+```
+**Model Evaluation and Prediction**
+```python
+# sample text to check if fake or not
+X = str(input(">>> INPUT YOUR NEWS TEXT: "))
+
+# detection
+sequences = tokenizer1.texts_to_sequences([X])[0]
+sequences = pad_sequences([sequences], maxlen=54,
+						padding=padding_type,
+						truncating=trunc_type)
+if(model.predict(sequences, verbose=0)[0][0] >= 0.5):
+	print(f"Checked news: {X}\n>>> Result: This news are REAL!")
+else:
+	print(f"Checked news: {X}\n>>> Result: This news are FAKE!")
+```
+- Now, the detection model is built using TensorFlow. Now I will try to test the model by using some news text by predicting whether it is true or false.
