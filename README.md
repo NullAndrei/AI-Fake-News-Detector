@@ -3,7 +3,7 @@ This is a simple Fake News Detector written in python
 
 ![https://i.ibb.co/f8yMm5m/2023-03-04-20-48.png](https://i.ibb.co/f8yMm5m/2023-03-04-20-48.png)
 
-***What is fake news?***
+***What is [fake news](https://en.wikipedia.org/wiki/Fake_news)?***
 > [Fake news](https://en.wikipedia.org/wiki/Fake_news) is false or misleading information presented as news. Fake news often has the aim of damaging the reputation of a person or entity, or making money through advertising revenue. Although false news has always been spread throughout history, the term "fake news" was first used in the 1890s when sensational reports in newspapers were common.
 ### Example:
 ![GIF example](https://gifyu.com/images/ezgif.com-video-to-gif25c19cf7475c2212.gif)
