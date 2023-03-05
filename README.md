@@ -1,3 +1,5 @@
+![GIF example](https://gifyu.com/images/ezgif.com-video-to-gif25c19cf7475c2212.gif)
+
 # AI Fake News Detector
 This is a simple Fake News Detector written in python
 
@@ -5,9 +7,6 @@ This is a simple Fake News Detector written in python
 
 ***What is [fake news](https://en.wikipedia.org/wiki/Fake_news)?***
 > Fake news is false or misleading information presented as news. Fake news often has the aim of damaging the reputation of a person or entity, or making money through advertising revenue. Although false news has always been spread throughout history, the term "fake news" was first used in the 1890s when sensational reports in newspapers were common.
-
-### Example:
-![GIF example](https://gifyu.com/images/ezgif.com-video-to-gif25c19cf7475c2212.gif)
 
 ### About:
 > This is a simple python script that detect Fake or Real news by using [TensorFlow](https://www.tensorflow.org/).<br>
