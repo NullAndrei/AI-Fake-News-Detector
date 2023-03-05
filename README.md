@@ -22,3 +22,10 @@ This is a simple Fake News Detector written in python
 - [x] Generating Word Embeddings
 - [x] Model Architecture
 - [x] Model Evaluation and Prediction
+
+### How the script is build?
+```python
+# Reading the data
+data = pd.read_csv("news.csv")
+data.head()
+```
